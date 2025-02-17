@@ -1,0 +1,78 @@
+.container{
+    background-color: #153dbc;
+}
+
+.landing{
+    padding-top: 10rem;
+}
+
+.phoneContainer{
+    display: flex;
+    align-items: center;
+    padding: 5rem;
+    padding-top: 0;
+    justify-content: space-around;
+    gap: 2rem;
+
+}
+
+.phone{
+    filter: drop-shadow(0px .2rem .5rem rgba(0, 0, 0, 0.25));
+}
+
+.phone:nth-child(odd){
+    margin-top: 10rem;
+}
+.phone:nth-child(even){
+    margin-top: 5rem;
+}
+.phone:nth-child(3){
+
+    margin-top: 0;
+}
+
+.content{
+    width: 100%;
+    display: flex;
+    font-family: 'Syne';
+    font-weight: 700;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.space{
+    height: 500vh;
+}
+
+.page2{
+    padding: 10rem;
+}
+
+.page3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .upperTitle{
+        font-size: 1rem;
+        font-family: 'Syne';
+        font-weight: 700;
+        color: #F23041;
+        text-shadow: 0 0 1rem #F23041;
+    }
+
+    .title{
+        font-size: 4rem;
+        font-family: 'Syne';
+        font-weight: 700;
+    }
+
+    .PhoneSection{
+        margin-top: 5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 10rem
+    }
+}

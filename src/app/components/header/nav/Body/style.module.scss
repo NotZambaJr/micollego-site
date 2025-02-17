@@ -1,0 +1,39 @@
+.body{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    font-weight: 700 !important;
+
+    a{
+        color: black;
+        text-decoration: none;
+        font-size: 'Syne';
+        font-weight: 500;
+        text-transform: uppercase;
+        font-weight: 700 !important;
+    }
+
+    p{
+        margin: 0px;
+        display: flex;
+        overflow: hidden;
+        font-size: 32px;
+        padding-right: 30px;
+        padding-top: 10px;
+        font-weight: 300;
+        font-weight: 600 !important;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+   
+    .body{
+        max-width: 1200px;
+        margin-top: 80px;
+
+        p{
+            font-size: 5vw;
+            padding-right: 2vw;
+        }
+    }
+}

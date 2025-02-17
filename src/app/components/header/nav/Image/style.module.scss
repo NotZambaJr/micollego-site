@@ -1,0 +1,19 @@
+.imageContainer{
+    display: none;
+}
+
+@media only screen and (min-width: 1000px) {
+   
+    .imageContainer{
+        display: block;
+        margin-top: 1rem;
+        width: 450px;
+        height: 450px;
+        position: relative;
+
+        img{
+            object-fit: cover;
+        }
+    }
+    
+}

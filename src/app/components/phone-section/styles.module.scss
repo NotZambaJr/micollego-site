@@ -1,0 +1,27 @@
+.container{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    gap: 5rem
+}
+
+.content{
+    margin-top: 10rem;
+}
+.phoneContainer{
+    width: 50%;
+}
+
+.contentPrev{
+    font-family: 'Syne';
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.contentNext{
+    font-family: 'Syne';
+    font-weight: 200;
+    font-size: 1.5rem;
+    width: 100%;
+    text-align: left;
+}
