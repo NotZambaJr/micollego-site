@@ -55,24 +55,39 @@
     align-items: center;
     flex-direction: column;
 
-    .upperTitle{
-        font-size: 1rem;
-        font-family: 'Syne';
-        font-weight: 700;
-        color: #F23041;
-        text-shadow: 0 0 1rem #F23041;
-    }
-
-    .title{
-        font-size: 4rem;
-        font-family: 'Syne';
-        font-weight: 700;
-    }
-
     .PhoneSection{
         margin-top: 5rem;
         display: flex;
         flex-direction: column;
         gap: 10rem
     }
+}
+
+.page4{
+    margin-top: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5rem;
+    width: 100%;
+}
+
+.upperTitle{
+    font-size: 1rem;
+    font-family: 'Syne';
+    font-weight: 700;
+    color: #F23041;
+    text-shadow: 0 0 1rem #F23041;
+}
+
+.title{
+    font-size: 4rem;
+    font-family: 'Syne';
+    font-weight: 700;
+}
+
+.Features{
+    margin-top: 5rem;
+    margin-bottom: 10rem;
 }

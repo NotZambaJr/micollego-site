@@ -1,0 +1,49 @@
+.featuresSection{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10rem;
+    padding-top: 0;
+    padding-bottom: 0;
+    justify-content: space-around;
+    
+    gap: 5rem 2rem;
+    .feature{
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+
+        .featureicon{
+            font-size: 2rem;
+            width: 3rem;
+            border-radius: .75rem;
+            background-color: #F23041;
+
+        }
+        .featureicon::before{
+            content: '';
+            padding-top: 100%;
+            display: block;
+            
+        }
+
+        .featuretextPrev{
+            margin-top: 2rem;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            font-family: 'Syne';
+            font-weight: 700;
+        }
+
+        .featuretextNext{
+            font-size: .9rem;
+            font-family: 'Syne';
+            width: 70%;
+            font-weight: 500;
+            text-align: center;
+        }
+    }
+}

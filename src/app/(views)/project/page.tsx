@@ -4,67 +4,12 @@ import Header from "@/app/components/header";
 import LocomotiveScroll from "locomotive-scroll";
 import { Iphone15Pro } from "@/app/components/iphone";
 import styles from "./page.module.scss";
+import { useState } from "react";
+import { AnimatePresence } from "framer-motion";
+import Preloader from "@/app/components/preloader";
 import Landing from "@/app/components/project-landing";
 import PhoneSection from "@/app/components/phone-section";
-import {
-  BellIcon,
-  CalendarIcon,
-  FileTextIcon,
-  GlobeIcon,
-  InputIcon,
-} from "@radix-ui/react-icons";
-
-import { BentoCard, BentoGrid } from "@/app/components/magicui/bento-grid";
-
-const features = [
-  {
-    Icon: FileTextIcon,
-    name: "Save your files",
-    description: "We automatically save your files as you type.",
-    href: "/",
-    cta: "Learn more",
-    background: <img className="absolute -right-20 -top-20 opacity-60" />,
-    className: "lg:row-start-1 lg:row-end-4 lg:col-start-2 lg:col-end-3",
-  },
-  {
-    Icon: InputIcon,
-    name: "Full text search",
-    description: "Search through all your files in one place.",
-    href: "/",
-    cta: "Learn more",
-    background: <img className="absolute -right-20 -top-20 opacity-60" />,
-    className: "lg:col-start-1 lg:col-end-2 lg:row-start-1 lg:row-end-3",
-  },
-  {
-    Icon: GlobeIcon,
-    name: "Multilingual",
-    description: "Supports 100+ languages and counting.",
-    href: "/",
-    cta: "Learn more",
-    background: <img className="absolute -right-20 -top-20 opacity-60" />,
-    className: "lg:col-start-1 lg:col-end-2 lg:row-start-3 lg:row-end-4",
-  },
-  {
-    Icon: CalendarIcon,
-    name: "Calendar",
-    description: "Use the calendar to filter your files by date.",
-    href: "/",
-    cta: "Learn more",
-    background: <img className="absolute -right-20 -top-20 opacity-60" />,
-    className: "lg:col-start-3 lg:col-end-3 lg:row-start-1 lg:row-end-2",
-  },
-  {
-    Icon: BellIcon,
-    name: "Notifications",
-    description:
-      "Get notified when someone shares a file or mentions you in a comment.",
-    href: "/",
-    cta: "Learn more",
-    background: <img className="absolute -right-20 -top-20 opacity-60" />,
-    className: "lg:col-start-3 lg:col-end-3 lg:row-start-2 lg:row-end-4",
-  },
-];
-
+import FeaturesSection from "@/app/components/project-points";
 export default function project() {
   const locomotiveScroll = new LocomotiveScroll({
     lenisOptions: {
@@ -73,8 +18,24 @@ export default function project() {
     },
   });
 
+  const [isLoading, setIsLoading] = useState(true);
+
+    React.useEffect(() => {
+      setTimeout(() => {
+        setIsLoading(false);
+        window.scrollTo({
+          top: 0,
+          left: 0,
+          behavior: "smooth",
+        });
+      }, 3000);
+    }, []);
+
   return (
     <div id="scroll-container" className={styles.container}>
+      <AnimatePresence mode="wait">
+        {isLoading && <Preloader />}
+      </AnimatePresence>
       <Header />
       <div className={styles.landing}>
         <Landing></Landing>
@@ -151,14 +112,12 @@ export default function project() {
         </div>
       </div>
       <div className={styles.page4}>
-        <BentoGrid className="lg:grid-rows-3">
-          {features.map((feature) => (
-            <BentoCard key={feature.name} {...feature} />
-          ))}
-        </BentoGrid>
+        <div className={styles.upperTitle}>FEATURES</div>
+        <div className={styles.title}>Poweful Features</div>
+        <div className={styles.Features}>
+          <FeaturesSection></FeaturesSection>
+        </div>
       </div>
-
-      <div className={styles.space}></div>
     </div>
   );
 }

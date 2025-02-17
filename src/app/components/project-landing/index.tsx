@@ -5,7 +5,7 @@ export default function prjLanding() {
       <div className={styles.upper}>
         <div className={styles.top}>
           <div className={styles.icon}></div>
-          <div className={styles.title}>Micollego</div>
+          <div className={styles.title}>Subbot</div>
         </div>
       </div>
       <div className={styles.lower}>
