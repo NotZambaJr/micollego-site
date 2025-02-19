@@ -1,44 +1,4 @@
-.title{
-width: 100vw;
-height: 105vh;
-display: flex;
-justify-content: flex-end;
-flex-direction: column;
-padding: 1rem;
-}
-
-.upper{
-font-size: 12rem;
-font-weight: 700;
-font-family: 'Syne';
-display: flex;
-align-items: center;
-line-height: 12rem;
-
-
-color: rgba(255,255,255,0.5);
-margin-bottom: -3.7rem;
-width: 100%;
-
-
-}
-
-.upperPost{
-font-size: 2rem;
-margin-left: 1rem;
-font-weight: 200;
-font-family: 'Visby';
-}
-
-.lower{
-font-size: 12rem;
-font-weight: 700;
-font-family: 'Syne';
-display: flex;
-}
-
 .main{
-    width: 30%;
     font-family: 'Syne';
     font-size: .7rem;
     color: rgba(255,255,255,0.5);

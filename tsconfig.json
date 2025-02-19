@@ -23,5 +23,12 @@
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/components/who-we-are/index.jsx"],
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules"],
+  "forceConsistentCasingInFileNames": true,
+  "noImplicitReturns": true,
+  "noImplicitThis": true,
+  "noImplicitAny": true,
+  "strictNullChecks": true,
+  "suppressImplicitAnyIndexErrors": true,
+  "noUnusedLocals": true
 }

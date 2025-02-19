@@ -19,15 +19,15 @@ const links = [
     src: "shop.png"
   },
   {
-    title: "About Us",
-    href: "/about",
-    src: "home.png"
-  },
-  {
-    title: "Reserved",
-    href: "/lookbook",
+    title: "Contact",
+    href: "/contact",
     src: "lookbook.png"
   },
+  {
+    title: "shop",
+    href: "/",
+    src: "about.png"
+  }
 ]
 
 export default function Index() {

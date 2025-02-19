@@ -16,6 +16,7 @@ import Footer from "./components/footer";
 export default function Home() {
 
 
+
   const locomotiveScroll = new LocomotiveScroll({
     lenisOptions: {
       lerp: 0.3,
@@ -45,6 +46,7 @@ export default function Home() {
       <div className={Style.nav}>
         <Header />
       </div>
+
       <div className={Style.viewMain}>
         <FloatingShape />
       </div>
@@ -55,11 +57,10 @@ export default function Home() {
       <div className={Style.page1}>
         <WhoWeAre></WhoWeAre>
       </div>
-      <div className={Style.page3}data-scroll-container >
-        <Immersive data-scroll data-scroll-sticky ></Immersive>
+      <div className={Style.page3}>
+        <Immersive></Immersive>
       </div>
-      <div className={Style.page4}>
-        <Footer></Footer></div>
+
     </main>
   );
 }

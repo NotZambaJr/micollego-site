@@ -1,7 +1,6 @@
 .viewMain{
-  display: flex;
   height: 100vh;
-  width: 100%;
+  width: 100vw;
   background-color: #fff;
 }
 
@@ -44,4 +43,6 @@
 .page3{
   position: sticky;
   border: none;
+  overflow: hidden;
+  -ms-overflow-style:none;
 }
