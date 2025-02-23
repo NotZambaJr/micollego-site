@@ -15,7 +15,7 @@ export default function index() {
         <div className={styles.header} style={{backgroundColor: isActive? "white" : "transparent" ,}}>
             <div className={styles.bar}>
                 <Link href="/" className={styles.link}>
-                <Image className={styles.logo} src="/assets/img/LogoNav.png" alt="micollego" width={500} height={300}></Image>
+                <Image className={styles.logo} src="/assets/img/LogoNav.png" style={{fiilter: isActive? "invert(1)" : "invert(0)"}} alt="micollego" width={500} height={300}></Image>
                 </Link>
                 <div onClick={() => {setIsActive(!isActive)}} className={styles.el}>
                     <div className={`${styles.burger} ${isActive ? styles.burgerActive : ""}`} style={{color: 'black'}}></div>

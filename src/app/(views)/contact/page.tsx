@@ -5,19 +5,11 @@ import SwitchBall from "@/app/components/ball";
 import { AnimatePresence } from "framer-motion";
 import Preloader from "@/app/components/preloader";
 import { useState } from "react";
-import LocomotiveScroll from "locomotive-scroll";
 import { HyperText } from "@/app/components/anim-text";
 import styles from "./page.module.scss";
 
 export default function Contact() {
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  const locomotiveScroll = new LocomotiveScroll({
-    lenisOptions: {
-      lerp: 0.3,
-      duration: 1,
-    },
-  });
-
   const [isLoading, setIsLoading] = useState(true);
 
   React.useEffect(() => {

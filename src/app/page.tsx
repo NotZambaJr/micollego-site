@@ -6,23 +6,22 @@ import Style from "./page.module.css";
 import LandingTitle from "@/app/components/landing-title";
 import Header from "@/app/components/header";
 import React from "react";
-import WhoWeAre from "@/app/components/who-we-are";
 import { AnimatePresence } from "framer-motion";
 import Preloader from "@/app/components/preloader";
-// import MenuSection from "@/app/components/menu-section";
-import Immersive from "./components/immersive";
 import LocomotiveScroll from "locomotive-scroll";
-import Footer from "./components/footer";
+import Articles from "@/app/components/articles";
+import About from "./components/about";
+import Footer from "@/app/components/footer";
+
 export default function Home() {
-
-
-
   const locomotiveScroll = new LocomotiveScroll({
+    autoResize: true,
+    smooth: true,
     lenisOptions: {
       lerp: 0.3,
       duration: 1,
-    }
-});
+    },
+  });
 
   const [isLoading, setIsLoading] = useState(true);
 
@@ -36,10 +35,9 @@ export default function Home() {
       });
     }, 3000);
   }, []);
-  
 
   return (
-    <main>
+    <div className={Style.container}>
       <AnimatePresence mode="wait">
         {isLoading && <Preloader />}
       </AnimatePresence>
@@ -47,20 +45,27 @@ export default function Home() {
         <Header />
       </div>
 
-      <div className={Style.viewMain}>
+      <div
+        className={Style.page0}
+        data-scroll
+      >
         <FloatingShape />
       </div>
-      <div className={Style.title}>
+
+      <div className={Style.title} data-scroll data-scroll-speed=".4">
         <LandingTitle></LandingTitle>
       </div>
 
       <div className={Style.page1}>
-        <WhoWeAre></WhoWeAre>
-      </div>
-      <div className={Style.page3}>
-        <Immersive></Immersive>
+        <About></About>
       </div>
 
-    </main>
+
+      <div className={Style.page2} data-scroll data-scroll-speed=".3">
+        <Articles></Articles>  
+
+      </div>
+      <div className={Style.page3}><Footer></Footer></div>
+    </div>
   );
 }

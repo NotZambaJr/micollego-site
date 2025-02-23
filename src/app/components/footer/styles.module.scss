@@ -1,0 +1,69 @@
+.footer {
+  margin-top: -15rem;
+  padding-top: 5rem;
+    background-color: #fff;
+  .footerUpper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 1rem;
+    color: #000;
+
+    .footerLeft {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      justify-content: space-between;
+
+      .footerTitle {
+        font-family: "Syne";
+        font-weight: 700;
+        font-size: 3rem;
+        color: #000;
+        margin-bottom: 1rem;
+        text-transform: uppercase;
+        height: 50%;
+      }
+
+      .footerNumber {
+        font-family: "Visby";
+        font-size: 1.7rem;
+        font-weight: 400;
+        color: #000;
+      }
+
+      .footerSubTitle {
+        margin-top: 3rem;
+        font-family: "Syne";
+        font-size: 0.7rem;
+        color: #000;
+      }
+    }
+
+    .footerRight {
+      display: flex;
+      gap: 1rem;
+      justify-content: space-between;
+      align-items: center;
+      margin-right: 3rem;
+    }
+  }
+
+  .footerLower{
+    display: flex;
+    flex-direction: column;
+    color:#000;
+
+    .footerLowerTitle{
+        font-family: 'Syne';
+        font-size: .5rem;
+        color: #000;
+        width: 100%;
+        overflow: clip;
+        margin-top: 10rem;
+        overflow: hidden;
+        display: flex;
+    }
+
+  }
+}

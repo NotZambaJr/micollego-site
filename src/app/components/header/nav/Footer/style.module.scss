@@ -18,8 +18,10 @@
 
     li{
         span{
-            color: #9f9689;
+            color: rgba(60,60,60, 0.2);
         }
+        color: rgba(60,60,60, 0.2);
+
     }
 }
 
@@ -27,6 +29,7 @@
     .footer{
         justify-content: space-between;
 
+        color: rgba(60,60,60, 0.2);
         ul{
             width: auto
         }

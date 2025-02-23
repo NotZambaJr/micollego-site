@@ -1,0 +1,11 @@
+Model Information:
+* title:	Danganronpa: Megaphone Hacking Gun
+* source:	https://sketchfab.com/3d-models/danganronpa-megaphone-hacking-gun-b1e247a0f394455aa12086b3a79c01cd
+* author:	Spookies (https://sketchfab.com/true-chainz)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Danganronpa: Megaphone Hacking Gun" (https://sketchfab.com/3d-models/danganronpa-megaphone-hacking-gun-b1e247a0f394455aa12086b3a79c01cd) by Spookies (https://sketchfab.com/true-chainz) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

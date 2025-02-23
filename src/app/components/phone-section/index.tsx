@@ -1,6 +1,5 @@
 import { Iphone15Pro } from "../iphone";
 import styles from "./styles.module.scss";
-import LocomotiveScroll from "locomotive-scroll";
 
 export default function PhoneSection(props) {
   

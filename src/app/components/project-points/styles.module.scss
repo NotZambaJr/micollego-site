@@ -1,13 +1,13 @@
 .featuresSection{
-    width: 100%;
+    max-width: 100%;
     display: flex;
+    overflow: hidden;
     flex-wrap: wrap;
-    padding: 10rem;
     padding-top: 0;
     padding-bottom: 0;
     justify-content: space-around;
-    
     gap: 5rem 2rem;
+
     .feature{
         width: 30%;
         display: flex;

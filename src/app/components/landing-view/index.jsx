@@ -35,7 +35,7 @@ export default function Index() {
   }, [])
 
   return (
-    <Canvas style={{background: "#153dbc", width: "100vw", height: "100vh"}} orthographic camera={{position: [0, 25, 500], zoom: 10}}>
+    <Canvas style={{background: "#153dbc", width: "100vw", height: "100vh"}} orthographic camera={{position: [0, 25, 500], zoom: 8}}>
         <Model mouse={smoothMouse}/>
         <Environment preset="sunset"/>
     </Canvas>

@@ -9,6 +9,7 @@ import { AnimatePresence } from "framer-motion";
 import Preloader from "@/app/components/preloader";
 import Landing from "@/app/components/project-landing";
 import PhoneSection from "@/app/components/phone-section";
+import Footer from "@/app/components/footer";
 import FeaturesSection from "@/app/components/project-points";
 export default function project() {
   const locomotiveScroll = new LocomotiveScroll({
@@ -20,16 +21,16 @@ export default function project() {
 
   const [isLoading, setIsLoading] = useState(true);
 
-    React.useEffect(() => {
-      setTimeout(() => {
-        setIsLoading(false);
-        window.scrollTo({
-          top: 0,
-          left: 0,
-          behavior: "smooth",
-        });
-      }, 3000);
-    }, []);
+  React.useEffect(() => {
+    setTimeout(() => {
+      setIsLoading(false);
+      window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: "smooth",
+      });
+    }, 3000);
+  }, []);
 
   return (
     <div id="scroll-container" className={styles.container}>
@@ -117,6 +118,9 @@ export default function project() {
         <div className={styles.Features}>
           <FeaturesSection></FeaturesSection>
         </div>
+      </div>
+      <div className={styles.page5} data-scroll data-scroll-speed=".3">
+      <Footer />
       </div>
     </div>
   );

@@ -8,7 +8,7 @@ export default function Index({src, isActive}) {
   return (
     <motion.div variants={opacity} initial="initial" animate={isActive ? "open" : "closed"} className={styles.imageContainer}>
         <Image 
-        src={`/images/${src}`}
+        src={`/${src}`}
         fill={true}
         alt=""
         style={{width: '100%', height: '100%', backgroundColor: '#153dbc', borderRadius: '1rem'}}

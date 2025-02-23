@@ -11,22 +11,22 @@ const links = [
   {
     title: "Home",
     href: "/",
-    src: "home.png"
+    src: "assets/img/icons/Landing.png"
   },
   {
     title: "Project",
     href: "/project",
-    src: "shop.png"
+    src: "assets/img/icons/About.png"
   },
   {
     title: "Contact",
     href: "/contact",
-    src: "lookbook.png"
+    src: "assets/img/icons/Contact.png"
   },
   {
     title: "shop",
     href: "/",
-    src: "about.png"
+    src: "assets/img/icons/Coming.png"
   }
 ]
 

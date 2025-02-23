@@ -1,0 +1,23 @@
+.aboutRight{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Syne';
+    padding: 5rem;
+    padding-top: 20rem;
+    overflow: hidden;
+    gap: 10rem;
+
+    .aboutRightTitle{
+        font-size: 3rem;
+        font-weight: 800;
+        margin-top: 2rem;
+        font-family: 'Syne';
+
+    }
+    .aboutRightText{
+        font-size: 1.25rem;
+        font-weight: 500;
+    }
+}

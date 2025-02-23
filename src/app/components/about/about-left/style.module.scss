@@ -1,0 +1,21 @@
+.aboutRight{
+    position: relative;
+    height: 100vh;
+
+    .aboutRightTitle{
+        font-size: 4rem;
+        font-weight: 800;
+        margin-top: 1.5rem;
+        position: absolute;
+        font-family: 'Syne';
+        line-height: 8rem;
+        z-index: 1;
+        top: 5rem;
+        left: 2rem;
+    }
+}
+
+.badge{
+    width: 100vw;
+    height: 100vh;
+}

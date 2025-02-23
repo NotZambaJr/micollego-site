@@ -1,72 +1,60 @@
 .title{
 width: 100vw;
-height: 105vh;
+height: 100vh;
 display: flex;
-justify-content: flex-end;
+justify-content: center;
+align-items: center;
 flex-direction: column;
 padding: 1rem;
-}
-
-.upper{
-font-size: 12rem;
-font-weight: 700;
 font-family: 'Syne';
-display: flex;
-align-items: center;
-line-height: 12rem;
 
 
-color: rgba(255,255,255,0.5);
-margin-bottom: -3.7rem;
-width: 100%;
+.titleTop{
+    text-align: center;
+    font-size: 6rem;
+    line-height: 5.5rem;
+    font-weight: 700;
+    color: #fff;
 
-
+    .underLine{
+        font-weight: 800;
+        line-height: 5rem;
+        color: #fff;
+    }
 }
 
-.upperPost{
-font-size: 2rem;
-margin-left: 1rem;
-font-weight: 200;
-font-family: 'Visby';
-}
-
-.lower{
-font-size: 12rem;
-font-weight: 700;
-font-family: 'Syne';
-display: flex;
-}
-
-.main{
+.titleBottom{
+    text-align: center;
     width: 30%;
-    font-family: 'Syne';
-    font-size: .7rem;
-    color: rgba(255,255,255,0.5);
-    display: flex;
-    margin-left: 2rem;
-    flex-direction: column;
-    justify-content: center;
-    gap: .5rem;
-    
-    .container{
-        display: flex;
-        svg{
-            max-height: 30px;
-            width: 30px;           
-            background-color: rgba(255,255,255,0.2);
-            border-radius: 50%;
-            margin-right: 1rem;
-            padding: 0.5rem;
-            fill: #153dbc;
-            transition: fill 0.2s;
-            cursor: pointer;
-            
-            &:hover{
-                fill: #fff ;
-            }
-        }
-    }
-    p{
-        color:#494136;
-    }
+    font-size: 1.25rem;
+    color: #fff;
 }
+
+
+.titleButton{
+    background-color: white;
+    width: 4rem;
+    border-radius: 50%;
+    margin-top: 2rem;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: #000;
+}
+
+.titleButton::before{
+    content: '';
+    display: block;
+    padding-top: 100%;
+}
+
+.shortcuts{
+    position: absolute;
+    left: .5rem;
+    top: 80%;
+}
+
+}
+

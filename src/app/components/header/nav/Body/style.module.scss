@@ -3,6 +3,7 @@
     flex-wrap: wrap;
     margin-top: 40px;
     font-weight: 700 !important;
+    color: #000;
 
     a{
         color: black;
@@ -23,6 +24,10 @@
         font-weight: 300;
         font-weight: 600 !important;
     }
+
+    span{
+        color: black;
+    }
 }
 
 @media only screen and (min-width: 1000px) {
@@ -30,6 +35,7 @@
     .body{
         max-width: 1200px;
         margin-top: 80px;
+        color: #000;
 
         p{
             font-size: 5vw;

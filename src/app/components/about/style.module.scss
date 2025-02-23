@@ -1,0 +1,24 @@
+.about{
+    width: 100vw;
+    display: flex;
+    flex: 6;
+    overflow: visible;
+
+    .aboutRight{
+        width: 50%;
+        color: white;
+    }
+    .aboutLeft{
+        position: sticky;
+        position: -webkit-sticky;
+        width: 50%;
+        height: 100px;
+        top: 0;
+        margin-bottom: 50rem;
+
+        .badge{
+            width: 100%;
+        }
+    }
+}
+

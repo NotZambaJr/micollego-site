@@ -7,32 +7,32 @@ export default function FeaturesSection() {
         <div className={styles.feature}>
             <div className={styles.featureicon}></div>
             <div className={styles.featuretextPrev}>Feature</div>
-            <div className={styles.featuretextNext}>helping you become who you want. By performing your performance</div>
+            <div className={styles.featuretextNext}>helping you become who you want. <br></br>By performing your performance</div>
         </div>
         <div className={styles.feature}>
             <div className={styles.featureicon}></div>
             <div className={styles.featuretextPrev}>Feature</div>
-            <div className={styles.featuretextNext}>helping you become who you want. By performing your performance</div>
+            <div className={styles.featuretextNext}>helping you become who you want. <br></br>By performing your performance</div>
         </div>
         <div className={styles.feature}>
             <div className={styles.featureicon}></div>
             <div className={styles.featuretextPrev}>Feature</div>
-            <div className={styles.featuretextNext}>helping you become who you want. By performing your performance </div>
+            <div className={styles.featuretextNext}>helping you become who you want. <br></br>By performing your performance </div>
         </div>
         <div className={styles.feature}>
             <div className={styles.featureicon}></div>
             <div className={styles.featuretextPrev}>Feature</div>
-            <div className={styles.featuretextNext}>helping you become who you want. By performing your performance</div>
+            <div className={styles.featuretextNext}>helping you become who you want. <br></br>By performing your performance</div>
         </div>
         <div className={styles.feature}>
             <div className={styles.featureicon}></div>
             <div className={styles.featuretextPrev}>Feature</div>
-            <div className={styles.featuretextNext}>helping you become who you want. By performing your performance</div>
+            <div className={styles.featuretextNext}>helping you become who you want. <br></br>By performing your performance</div>
         </div>
         <div className={styles.feature}>
             <div className={styles.featureicon}></div>
             <div className={styles.featuretextPrev}>Feature</div>
-            <div className={styles.featuretextNext}>helping you become who you want. By performing your performance</div>
+            <div className={styles.featuretextNext}>helping you become who you want. <br></br>By performing your performance</div>
         </div>
     </div>
   )};
