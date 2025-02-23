@@ -1,7 +1,6 @@
 import style from "./style.module.scss";
-import LocomotiveScroll from "locomotive-scroll";
 import React from "react";
-import Shortcuts from "@/app/components/shortcuts";
+import Shortcuts from "@/app/components/landing/shortcuts";
 
 export default function LandingTitle() {
   return (
@@ -11,7 +10,7 @@ export default function LandingTitle() {
         <div className={style.underLine}>New Horizons</div>
       </div>
       <div className={style.titleBottom}>
-        We're building the productivity tool of the future; for teams and
+        We&apos;re building the productivity tool of the future; for teams and
         individuals alike.
       </div>
       <button className={style.titleButton}>A</button>

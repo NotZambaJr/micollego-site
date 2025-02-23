@@ -1,14 +1,14 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 "use client";
 import { useState } from "react";
-import FloatingShape from "@/app/components/landing-view";
-import Style from "./page.module.css";
-import LandingTitle from "@/app/components/landing-title";
-import Header from "@/app/components/header";
 import React from "react";
+import Style from "./page.module.css";
 import { AnimatePresence } from "framer-motion";
-import Preloader from "@/app/components/preloader";
 import LocomotiveScroll from "locomotive-scroll";
+import Header from "@/app/components/header";
+import FloatingShape from "@/app/components/landing/landing-view/index";
+import LandingTitle from "@/app/components/landing/landing-title/index";
+import Preloader from "@/app/components/preloader";
 import Articles from "@/app/components/articles";
 import About from "./components/about";
 import Footer from "@/app/components/footer";
@@ -16,7 +16,6 @@ import Footer from "@/app/components/footer";
 export default function Home() {
   const locomotiveScroll = new LocomotiveScroll({
     autoResize: true,
-    smooth: true,
     lenisOptions: {
       lerp: 0.3,
       duration: 1,
@@ -45,10 +44,7 @@ export default function Home() {
         <Header />
       </div>
 
-      <div
-        className={Style.page0}
-        data-scroll
-      >
+      <div className={Style.page0} data-scroll>
         <FloatingShape />
       </div>
 
@@ -60,12 +56,12 @@ export default function Home() {
         <About></About>
       </div>
 
-
       <div className={Style.page2} data-scroll data-scroll-speed=".3">
-        <Articles></Articles>  
-
+        <Articles></Articles>
       </div>
-      <div className={Style.page3}><Footer></Footer></div>
+      <div className={Style.page3}>
+        <Footer></Footer>
+      </div>
     </div>
   );
 }

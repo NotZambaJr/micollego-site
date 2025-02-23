@@ -1,4 +1,3 @@
-
 .header {
   position: absolute;
   top: 0;
@@ -20,35 +19,32 @@
     left: 0;
   }
 
-}
-
-.contact {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  position: relative;
-  z-index: 1;
-  width: 50%;
-  overflow: hidden;
-  height: 90vh;
-
-  .contactTitle {
-    pointer-events: none;
-    font-family: "Visby";
-    font-size: 2rem;
-    font-weight: 300;
-
+  .contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
     z-index: 1;
-  }
+    width: 50%;
+    overflow: hidden;
+    height: 90vh;
 
-  .contactText {
-    font-family: "Syne";
-    font-weight: 800;
-    font-variant-numeric: tabular-nums lining-nums;
-    font-size: 4rem;
-    z-index: 1;
-    color: #fff;
-  }
-  .contactText:hover {
+    .contactTitle {
+      pointer-events: none;
+      font-family: "Visby";
+      font-size: 2rem;
+      font-weight: 300;
+
+      z-index: 1;
+    }
+
+    .contactText {
+      font-family: "Syne";
+      font-weight: 800;
+      font-variant-numeric: tabular-nums lining-nums;
+      font-size: 4rem;
+      z-index: 1;
+      color: #fff;
+    }
   }
 }

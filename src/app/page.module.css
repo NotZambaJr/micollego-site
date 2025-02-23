@@ -36,11 +36,9 @@
     background-color: #fff;
   }
 
-  .page3{
+  .page3 {
     position: relative;
     z-index: 3;
     background-color: red;
-    
-
   }
 }

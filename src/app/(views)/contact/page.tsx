@@ -32,7 +32,9 @@ export default function Contact() {
         <Header></Header>
       </div>
       <div className={styles.contactContainer}>
-        <div className={styles.ball}><SwitchBall></SwitchBall></div>
+        <div className={styles.ball}>
+          <SwitchBall></SwitchBall>
+        </div>
         <div className={styles.contact}>
           <div className={styles.contactTitle}>contact us on</div>
           <HyperText

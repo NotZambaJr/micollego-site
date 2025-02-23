@@ -11,7 +11,10 @@ import Landing from "@/app/components/project-landing";
 import PhoneSection from "@/app/components/phone-section";
 import Footer from "@/app/components/footer";
 import FeaturesSection from "@/app/components/project-points";
-export default function project() {
+
+export default function Project() {
+
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const locomotiveScroll = new LocomotiveScroll({
     lenisOptions: {
       lerp: 0.3,

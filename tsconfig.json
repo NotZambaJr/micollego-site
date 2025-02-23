@@ -22,7 +22,7 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/components/_who-we-are/index.jsx", "src/app/components/footer/logo/index.jsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/components/obsolete/_who-we-are/index.jsx", "src/app/components/footer/logo/index.jsx"],
   "exclude": ["node_modules"],
   "forceConsistentCasingInFileNames": true,
   "noImplicitReturns": true,
