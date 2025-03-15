@@ -3,7 +3,7 @@ import "@/app/fonts/fonts.module.css";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Micollego",
+  title: "micollego",
   description: "",
 };
 

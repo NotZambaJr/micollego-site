@@ -13,15 +13,17 @@
         flex-direction: row;
         margin: 10rem 17rem;
         justify-content: space-between;
+
+
+
     }
     
     .megaphoneCanvas{
-        width: 100vw;
         height: 150vh;
         position: absolute;
         top: 0 ;
         left: 0;
-        width: 100vw;
+        width: 90vw;
         z-index: -1;
         overflow: hidden;
     
@@ -38,4 +40,5 @@
     font-weight: 700;
     color: #153dbc;
 }
+
 

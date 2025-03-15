@@ -1,11 +1,8 @@
 .container{
     background-color: #153dbc;
     overflow-x: hidden;
-    overflow: hidden;ù
+    overflow: hidden;
 
-    .landing{
-        padding-top: 10rem;
-    }
     
     .phoneContainer{
         display: flex;
@@ -34,12 +31,13 @@
     
     .content{
         width: 100%;
-        display: flex;
+        font-size: 1,5rem;
         font-family: 'Syne';
         font-weight: 700;
         text-align: center;
         align-items: center;
         justify-content: center;
+        font-size: 1.5rem;
     }
     
     .space{
@@ -57,10 +55,10 @@
         flex-direction: column;
     
         .PhoneSection{
-            margin-top: 5rem;
+            margin-top: 10rem;
             display: flex;
             flex-direction: column;
-            gap: 10rem
+            gap: 15rem
         }
     }
     

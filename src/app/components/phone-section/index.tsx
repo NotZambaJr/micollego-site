@@ -14,10 +14,9 @@ export default function PhoneSection(props) {
             data-scroll
             data-scroll-speed=".2"
           >
-            <div className={styles.contentPrev}>AI Power Scheduling</div>
+            <div className={styles.contentPrev}>Everywhere <br></br>you want!</div>
             <div className={styles.contentNext}>
-              Intelligent scheduling that learns <br></br> your preferences and
-              optimizes<br></br> your time.
+              We made it versatile and able<br></br>to work in salty water, too. <br></br>The only limit is your fantasy!
             </div>
           </div>
         </div>
@@ -30,10 +29,9 @@ export default function PhoneSection(props) {
                 data-scroll
                 data-scroll-speed=".2"
               >
-                <div className={styles.contentPrev}>AI Power Scheduling</div>
+                <div className={styles.contentPrev}>Easy-to-Read</div>
                 <div className={styles.contentNext}>
-                  Intelligent scheduling that learns <br></br> your preferences and
-                  optimizes<br></br> your time.
+                  Smart algorithms that simplify<br></br> your life by making simple graphs <br></br>and charts.
                 </div>
               </div>
               <div className={styles.phoneContainer}>

@@ -1,5 +1,5 @@
 .title{
-width: 100vw;
+width: 80vw;
 height: 100vh;
 display: flex;
 justify-content: center;
@@ -14,6 +14,8 @@ font-family: 'Syne';
     font-size: 6rem;
     line-height: 5.5rem;
     font-weight: 700;
+
+    margin-bottom: 1rem;
     color: #fff;
 
     .underLine{
@@ -32,15 +34,13 @@ font-family: 'Syne';
 
 
 .titleButton{
-    background-color: white;
-    width: 4rem;
+    width: 5rem;
     border-radius: 50%;
-    margin-top: 2rem;
-    height: 4rem;
+    margin-top: 1rem;
+    height: 5rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    cursor: pointer;
     color: #000;
 }
 

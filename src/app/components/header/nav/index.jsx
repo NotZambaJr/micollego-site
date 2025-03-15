@@ -5,7 +5,6 @@ import { motion } from 'framer-motion';
 import { height } from '../anim';
 import Body from './Body';
 import Footer from './Footer';
-import Image from './Image';
 
 const links = [
   {
@@ -19,8 +18,8 @@ const links = [
     src: "assets/img/icons/About.png"
   },
   {
-    title: "Contact",
-    href: "/contact",
+    title: "Contacts",
+    href: "/contacts",
     src: "assets/img/icons/Contact.png"
   },
   {

@@ -1,0 +1,79 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: blue;
+  z-index: 3;
+}
+.contactContainer {
+  margin: 0;
+  padding: 1.5rem;
+  overflow: hidden;
+  max-height: 100vh;
+
+  .ball {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    bottom: 0;
+    overflow: hidden;
+    left: 0;
+  }
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: relative;
+  z-index: 1;
+  width: 50%;
+  overflow: hidden;
+  height: 90vh;
+
+  .contactTitle {
+    pointer-events: none;
+    font-family: "Visby";
+    font-size: 2rem;
+    font-weight: 300;
+
+    z-index: 1;
+  }
+
+
+}
+
+.contactText {
+  display: inline-block;
+  position: relative;
+  font-family: 'Syne';
+  font-weight: 800;
+  font-size: 4rem;
+  padding-left: .5rem;
+  color: #fff;
+  position: relative;
+  z-index: 3;
+  transition: filter 0.25s ease-out;
+}
+
+.contactText::after {
+  content: '';
+  position: absolute;
+  width: 77%;
+  transform: scaleX(0);
+  height: 5px;
+  bottom: 0;
+  left: .5rem;
+  background-color: #fff;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+
+}
+
+.contactText:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+  padding-left: .5rem;
+}
+
+

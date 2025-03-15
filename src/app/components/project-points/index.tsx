@@ -4,35 +4,88 @@ import styles from "./styles.module.scss";
 export default function FeaturesSection() {
   return (
     <div className={styles.featuresSection}>
-        <div className={styles.feature}>
-            <div className={styles.featureicon}></div>
-            <div className={styles.featuretextPrev}>Feature</div>
-            <div className={styles.featuretextNext}>helping you become who you want. <br></br>By performing your performance</div>
+     
+     <div className={styles.feature}>
+        <div className={styles.featureicon}>
+        <svg className={styles.icon} viewBox="0 0 20 20">
+							<path d="M10.25,2.375c-4.212,0-7.625,3.413-7.625,7.625s3.413,7.625,7.625,7.625s7.625-3.413,7.625-7.625S14.462,2.375,10.25,2.375M10.651,16.811v-0.403c0-0.221-0.181-0.401-0.401-0.401s-0.401,0.181-0.401,0.401v0.403c-3.443-0.201-6.208-2.966-6.409-6.409h0.404c0.22,0,0.401-0.181,0.401-0.401S4.063,9.599,3.843,9.599H3.439C3.64,6.155,6.405,3.391,9.849,3.19v0.403c0,0.22,0.181,0.401,0.401,0.401s0.401-0.181,0.401-0.401V3.19c3.443,0.201,6.208,2.965,6.409,6.409h-0.404c-0.22,0-0.4,0.181-0.4,0.401s0.181,0.401,0.4,0.401h0.404C16.859,13.845,14.095,16.609,10.651,16.811 M12.662,12.412c-0.156,0.156-0.409,0.159-0.568,0l-2.127-2.129C9.986,10.302,9.849,10.192,9.849,10V5.184c0-0.221,0.181-0.401,0.401-0.401s0.401,0.181,0.401,0.401v4.651l2.011,2.008C12.818,12.001,12.818,12.256,12.662,12.412"></path>
+						</svg>
         </div>
-        <div className={styles.feature}>
-            <div className={styles.featureicon}></div>
-            <div className={styles.featuretextPrev}>Feature</div>
-            <div className={styles.featuretextNext}>helping you become who you want. <br></br>By performing your performance</div>
+        <div className={styles.featuretext}>
+          <div className={styles.featuretextPrev}>Real Time Data</div>
+          <div className={styles.featuretextNext}>
+            Anytime Anyone collects data is uploaded and refined by AI algorithms.
+          </div>
         </div>
-        <div className={styles.feature}>
-            <div className={styles.featureicon}></div>
-            <div className={styles.featuretextPrev}>Feature</div>
-            <div className={styles.featuretextNext}>helping you become who you want. <br></br>By performing your performance </div>
+      </div> <div className={styles.feature}>
+        <div className={styles.featureicon}>
+        <svg className={styles.icon} viewBox="0 0 20 20">
+							<path d="M8.627,7.885C8.499,8.388,7.873,8.101,8.13,8.177L4.12,7.143c-0.218-0.057-0.351-0.28-0.293-0.498c0.057-0.218,0.279-0.351,0.497-0.294l4.011,1.037C8.552,7.444,8.685,7.667,8.627,7.885 M8.334,10.123L4.323,9.086C4.105,9.031,3.883,9.162,3.826,9.38C3.769,9.598,3.901,9.82,4.12,9.877l4.01,1.037c-0.262-0.062,0.373,0.192,0.497-0.294C8.685,10.401,8.552,10.18,8.334,10.123 M7.131,12.507L4.323,11.78c-0.218-0.057-0.44,0.076-0.497,0.295c-0.057,0.218,0.075,0.439,0.293,0.495l2.809,0.726c-0.265-0.062,0.37,0.193,0.495-0.293C7.48,12.784,7.35,12.562,7.131,12.507M18.159,3.677v10.701c0,0.186-0.126,0.348-0.306,0.393l-7.755,1.948c-0.07,0.016-0.134,0.016-0.204,0l-7.748-1.948c-0.179-0.045-0.306-0.207-0.306-0.393V3.677c0-0.267,0.249-0.461,0.509-0.396l7.646,1.921l7.654-1.921C17.91,3.216,18.159,3.41,18.159,3.677 M9.589,5.939L2.656,4.203v9.857l6.933,1.737V5.939z M17.344,4.203l-6.939,1.736v9.859l6.939-1.737V4.203z M16.168,6.645c-0.058-0.218-0.279-0.351-0.498-0.294l-4.011,1.037c-0.218,0.057-0.351,0.28-0.293,0.498c0.128,0.503,0.755,0.216,0.498,0.292l4.009-1.034C16.092,7.085,16.225,6.863,16.168,6.645 M16.168,9.38c-0.058-0.218-0.279-0.349-0.498-0.294l-4.011,1.036c-0.218,0.057-0.351,0.279-0.293,0.498c0.124,0.486,0.759,0.232,0.498,0.294l4.009-1.037C16.092,9.82,16.225,9.598,16.168,9.38 M14.963,12.385c-0.055-0.219-0.276-0.35-0.495-0.294l-2.809,0.726c-0.218,0.056-0.351,0.279-0.293,0.496c0.127,0.506,0.755,0.218,0.498,0.293l2.807-0.723C14.89,12.825,15.021,12.603,14.963,12.385"></path>
+						</svg>
         </div>
-        <div className={styles.feature}>
-            <div className={styles.featureicon}></div>
-            <div className={styles.featuretextPrev}>Feature</div>
-            <div className={styles.featuretextNext}>helping you become who you want. <br></br>By performing your performance</div>
+        <div className={styles.featuretext}>
+          <div className={styles.featuretextPrev}>Open Source</div>
+          <div className={styles.featuretextNext}>
+            Our database is open source and can be accessed by anyone who wants to use it.
+          </div>
         </div>
-        <div className={styles.feature}>
-            <div className={styles.featureicon}></div>
-            <div className={styles.featuretextPrev}>Feature</div>
-            <div className={styles.featuretextNext}>helping you become who you want. <br></br>By performing your performance</div>
+      </div> <div className={styles.feature}>
+        <div className={styles.featureicon}>
+        <svg className={styles.icon} viewBox="0 0 20 20">
+							<path d="M10,1.375c-3.17,0-5.75,2.548-5.75,5.682c0,6.685,5.259,11.276,5.483,11.469c0.152,0.132,0.382,0.132,0.534,0c0.224-0.193,5.481-4.784,5.483-11.469C15.75,3.923,13.171,1.375,10,1.375 M10,17.653c-1.064-1.024-4.929-5.127-4.929-10.596c0-2.68,2.212-4.861,4.929-4.861s4.929,2.181,4.929,4.861C14.927,12.518,11.063,16.627,10,17.653 M10,3.839c-1.815,0-3.286,1.47-3.286,3.286s1.47,3.286,3.286,3.286s3.286-1.47,3.286-3.286S11.815,3.839,10,3.839 M10,9.589c-1.359,0-2.464-1.105-2.464-2.464S8.641,4.661,10,4.661s2.464,1.105,2.464,2.464S11.359,9.589,10,9.589"></path>
+						</svg>
         </div>
-        <div className={styles.feature}>
-            <div className={styles.featureicon}></div>
-            <div className={styles.featuretextPrev}>Feature</div>
-            <div className={styles.featuretextNext}>helping you become who you want. <br></br>By performing your performance</div>
+        <div className={styles.featuretext}>
+          <div className={styles.featuretextPrev}>Easy-to-find</div>
+          <div className={styles.featuretextNext}>
+           We implement a gps sensor making easier for <br></br>You not to loose trace of your device.
+          </div>
         </div>
+
+      </div> 
+      <div className={styles.feature}>
+        <div className={styles.featureicon}>
+        <svg className={styles.icon} viewBox="0 0 20 20">
+							<path d="M12.546,4.6h-5.2C4.398,4.6,2,7.022,2,10c0,2.978,2.398,5.4,5.346,5.4h5.2C15.552,15.4,18,12.978,18,10C18,7.022,15.552,4.6,12.546,4.6 M12.546,14.6h-5.2C4.838,14.6,2.8,12.536,2.8,10s2.038-4.6,4.546-4.6h5.2c2.522,0,4.654,2.106,4.654,4.6S15.068,14.6,12.546,14.6 M12.562,6.2C10.488,6.2,8.8,7.904,8.8,10c0,2.096,1.688,3.8,3.763,3.8c2.115,0,3.838-1.706,3.838-3.8C16.4,7.904,14.678,6.2,12.562,6.2 M12.562,13C10.93,13,9.6,11.654,9.6,10c0-1.654,1.33-3,2.962-3C14.21,7,15.6,8.374,15.6,10S14.208,13,12.562,13"></path>
+						</svg>
+        </div>
+        <div className={styles.featuretext}>
+          <div className={styles.featuretextPrev}>Infinite Usage</div>
+          <div className={styles.featuretextNext}>
+            By powering the device with solar energy, you can use it as long as you want.
+          </div>
+        </div>
+      </div>
+      <div className={styles.feature}>
+        <div className={styles.featureicon}>
+        <svg className={styles.icon} viewBox="0 0 20 20">
+							<path d="M17.659,9.597h-1.224c-0.199-3.235-2.797-5.833-6.032-6.033V2.341c0-0.222-0.182-0.403-0.403-0.403S9.597,2.119,9.597,2.341v1.223c-3.235,0.2-5.833,2.798-6.033,6.033H2.341c-0.222,0-0.403,0.182-0.403,0.403s0.182,0.403,0.403,0.403h1.223c0.2,3.235,2.798,5.833,6.033,6.032v1.224c0,0.222,0.182,0.403,0.403,0.403s0.403-0.182,0.403-0.403v-1.224c3.235-0.199,5.833-2.797,6.032-6.032h1.224c0.222,0,0.403-0.182,0.403-0.403S17.881,9.597,17.659,9.597 M14.435,10.403h1.193c-0.198,2.791-2.434,5.026-5.225,5.225v-1.193c0-0.222-0.182-0.403-0.403-0.403s-0.403,0.182-0.403,0.403v1.193c-2.792-0.198-5.027-2.434-5.224-5.225h1.193c0.222,0,0.403-0.182,0.403-0.403S5.787,9.597,5.565,9.597H4.373C4.57,6.805,6.805,4.57,9.597,4.373v1.193c0,0.222,0.182,0.403,0.403,0.403s0.403-0.182,0.403-0.403V4.373c2.791,0.197,5.026,2.433,5.225,5.224h-1.193c-0.222,0-0.403,0.182-0.403,0.403S14.213,10.403,14.435,10.403"></path>
+						</svg>
+        </div>
+        <div className={styles.featuretext}>
+          <div className={styles.featuretextPrev}>Modular</div>
+          <div className={styles.featuretextNext}>
+            The device is modular, so it&apos;s easy to repair and upgrade.
+          </div>
+        </div>
+      </div>
+      <div className={styles.feature}>
+        <div className={styles.featureicon}>
+        <svg className={styles.icon} viewBox="0 0 20 20">
+							<path d="M14.68,12.621c-0.9,0-1.702,0.43-2.216,1.09l-4.549-2.637c0.284-0.691,0.284-1.457,0-2.146l4.549-2.638c0.514,0.661,1.315,1.09,2.216,1.09c1.549,0,2.809-1.26,2.809-2.808c0-1.548-1.26-2.809-2.809-2.809c-1.548,0-2.808,1.26-2.808,2.809c0,0.38,0.076,0.741,0.214,1.073l-4.55,2.638c-0.515-0.661-1.316-1.09-2.217-1.09c-1.548,0-2.808,1.26-2.808,2.809s1.26,2.808,2.808,2.808c0.9,0,1.702-0.43,2.217-1.09l4.55,2.637c-0.138,0.332-0.214,0.693-0.214,1.074c0,1.549,1.26,2.809,2.808,2.809c1.549,0,2.809-1.26,2.809-2.809S16.229,12.621,14.68,12.621M14.68,2.512c1.136,0,2.06,0.923,2.06,2.06S15.815,6.63,14.68,6.63s-2.059-0.923-2.059-2.059S13.544,2.512,14.68,2.512M5.319,12.061c-1.136,0-2.06-0.924-2.06-2.06s0.923-2.059,2.06-2.059c1.135,0,2.06,0.923,2.06,2.059S6.454,12.061,5.319,12.061M14.68,17.488c-1.136,0-2.059-0.922-2.059-2.059s0.923-2.061,2.059-2.061s2.06,0.924,2.06,2.061S15.815,17.488,14.68,17.488"></path>
+						</svg>
+        </div>
+        <div className={styles.featuretext}>
+          <div className={styles.featuretextPrev}>Highly Supported</div>
+          <div className={styles.featuretextNext}>
+            We have a team of experts ready to help you with any questions you may have.
+          </div>
+        </div>
+      </div>
+      
+      
+      
+      
     </div>
-  )};
+  );
+}

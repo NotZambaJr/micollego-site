@@ -5,13 +5,11 @@ export default function FooterCol2() {
   return (
     <div className={style.col}>
       <div className={style.footerTitle}>
-        CONTENT <br></br>
+        CONTACT US <br></br>
       </div>
-      <Item href="/about" title="Products" />
-      <Item href="/contact" title="Market" />
-      <Item href="/contact" title="Brands" />
-      <Item href="/contact" title="Projects" />
-      <Item href="/contact" title="Sustainability" />
+      <Item href="https://istitutobosco.edu.it/" title="Istituto Comprensivo" />
+      <Item href="https://maps.app.goo.gl/gbLm9xur6UxrVdU39" title="Location" />
+      <Item href="/privacy" title="Privacy Policy" />
     </div>
   );
 }

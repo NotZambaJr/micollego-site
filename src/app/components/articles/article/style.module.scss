@@ -10,13 +10,19 @@
     font-weight: bold;
     width: 5rem;
     color: #000;
+   
     filter: invert(1) saturate(60) brightness(0.45) hue-rotate(50deg)
       contrast(1);
+
   }
   .articleTitle {
     font-size: 2.5rem;
     font-weight: 600;
     color: #000;
     line-height: 2.75rem;
+    transition: color 0.3s ease-in-out;
+  }
+  .articleTitle:hover {
+    color: #153dbc;
   }
 }

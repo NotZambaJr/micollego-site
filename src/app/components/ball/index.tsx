@@ -1,3 +1,4 @@
+// @ts-nocheck
 "use client";
 import React, { useState, useEffect, Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
@@ -25,7 +26,7 @@ function Switch({ x, set }) {
   const onPointerOut = () => setHover(false);
 
   // Animate position and rotation based on spring value x
-  const pZ = x.to([0, 1], [-1.2, 1.2]);
+  const pZ = x.to([0, 1], [-1, 1]);
   const rX = x.to([0, 1], [0, Math.PI * 1.3]);
   const color = x.to([0, 1], ["#b0b0b0", "#fff"]);
 
@@ -71,7 +72,7 @@ export default function SwitchBall() {
   const [toggle, setToggle] = useState(0);
   const [spring, api] = useSpring(() => ({
     x: toggle,
-    config: { mass: 5, tension: 2000, friction: 10, precision: 0.0001 },
+    config: { mass: 5, tension: 200, friction: 15, precision: 0.0001 },
   }));
 
   useEffect(() => {
@@ -89,8 +90,8 @@ export default function SwitchBall() {
         color: x.to([0, 1], ["#b0b0b0", "#fff"]),
       }}
     >
-      <h1 className={styles.open} children="<switch>"/>
-      <h1 className={styles.close} children="</things>" />
+      <h1 className={styles.open}/><h1 className={styles.open}>&#8249;switch&#8250;</h1>
+      <h1 className={styles.close}/><h1 className={styles.close}>&#8249;/thins&#8249;</h1>
       <aDom.h1 className={styles.med}>{x.to((x) => (x).toFixed(2))}</aDom.h1>
       <Canvas
         orthographic

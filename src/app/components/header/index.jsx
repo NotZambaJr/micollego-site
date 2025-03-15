@@ -5,7 +5,7 @@ import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { opacity, background } from './anim';
 import Nav from './nav';
-import Image from 'next/image';
+import Image from 'next-export-optimize-images/image'
 export default function index() {
 
     // eslint-disable-next-line react-hooks/rules-of-hooks

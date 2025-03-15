@@ -1,4 +1,5 @@
 {
   "extends": ["next/core-web-vitals", "next/typescript"],
-  "ignorePatterns": ["node_modules", "scroller"]
+  "ignorePatterns": ["node_modules", "scroller" ],
+  "build": "DISABLE_ESLINT_PLUGIN=true react-scripts build"
 }

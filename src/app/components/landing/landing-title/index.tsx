@@ -13,8 +13,8 @@ export default function LandingTitle() {
         We&apos;re building the productivity tool of the future; for teams and
         individuals alike.
       </div>
-      <button className={style.titleButton}>A</button>
-      <div className={style.shortcuts}>
+      <img className={style.titleButton} src="./assets/img/IconNoBackground.png" alt="logo"></img>
+      <div id="shotcuts"className={style.shortcuts}>
         <Shortcuts></Shortcuts>
       </div>
     </div>

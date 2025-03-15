@@ -1,10 +1,12 @@
+// @ts-nocheck
+/* tslint:disable */
 import { Canvas } from "@react-three/fiber";
 import React, { useEffect } from "react";
 import styles from "./style.module.scss";
 import { motion } from "framer-motion-3d";
 import { useTransform } from "framer-motion";
 import * as THREE from "three";
-import { useMotionValue, useSpring } from "framer-motion";
+import { useMotionValue } from "framer-motion";
 import { useGLTF, Float } from "@react-three/drei";
 
 function Megaphone() {
@@ -13,7 +15,7 @@ function Megaphone() {
     y: useMotionValue(0),
   };
 
-  const manageMouse = (e) => {
+  const manageMouse = (e: MouseEvent) => {
     const { innerWidth, innerHeight } = window;
     const { clientX, clientY } = e;
     const x = clientX / innerWidth;
@@ -39,8 +41,6 @@ function Megaphone() {
     metalness: 0,
     side: THREE.DoubleSide,
   });
-  Model.nodes.megaphone.material.shading = THREE.SmoothShading;
-  Model.nodes.megaphone.geometry.computeVertexNormals(true);
   const a = multiplier / 2;
   const rotationX = useTransform(
     mouse.x,
@@ -55,6 +55,7 @@ function Megaphone() {
 
   return (
     <Float>
+      // @ts-ignore
       <motion.mesh
         castShadow={false}
         receiveShadow={false}

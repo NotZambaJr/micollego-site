@@ -1,33 +1,42 @@
 .featuresSection{
-    max-width: 100%;
+    max-width: 800%;
     display: flex;
     overflow: hidden;
     flex-wrap: wrap;
-    padding-top: 0;
+    margin: 0 3rem;
+    padding-top:5rem;
     padding-bottom: 0;
     justify-content: space-around;
-    gap: 5rem 2rem;
+    gap: 10rem 10%;
 
     .feature{
-        width: 30%;
+        width: 20%;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
 
+        .featuretext{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
 
         .featureicon{
             font-size: 2rem;
-            width: 3rem;
-            border-radius: .75rem;
+            width: 5rem;
+            height: 5rem;
+            border-radius: 1.25rem;
             background-color: #F23041;
 
-        }
-        .featureicon::before{
-            content: '';
-            padding-top: 100%;
-            display: block;
-            
+            .icon{
+                color: white;
+                font-size: 2rem;
+                fill: #fff;
+                padding: .5rem;
+                stroke-width: .1rem;
+            }
+
         }
 
         .featuretextPrev{
@@ -39,7 +48,7 @@
         }
 
         .featuretextNext{
-            font-size: .9rem;
+            font-size: 1.1rem;
             font-family: 'Syne';
             width: 70%;
             font-weight: 500;
