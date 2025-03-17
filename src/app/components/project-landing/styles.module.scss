@@ -1,6 +1,6 @@
 .container {
-overflow: hidden;
-padding-top: 10rem;
+  overflow: hidden;
+  padding-top: 10rem;
 
   .upper {
     width: 100%;
@@ -14,7 +14,7 @@ padding-top: 10rem;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      gap: .3rem;
+      gap: 0.3rem;
       font-family: "Syne";
       font-weight: 700;
 
@@ -24,38 +24,101 @@ padding-top: 10rem;
         border-radius: 1.75rem;
         overflow: hidden;
         box-shadow: 0px 0px 5rem rgba(255, 255, 255, 0.25);
-        background-color: #F23041;
+        background-color: #f23041;
 
-        .path{
+        .path {
           fill: #fff;
         }
-
       }
     }
   }
 
-  .lower{
-
+  .lower {
     margin-top: 2rem;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: .5rem;
+    gap: 0.5rem;
     overflow: hidden;
 
-    .textPrev{
-        font-size: 3rem;
-        font-family: 'Syne';
-        font-weight: 700;
+    .textPrev {
+      font-size: 3rem;
+      font-family: "Syne";
+      font-weight: 700;
     }
-    .textNext{
-        font-size: 1.5rem;
-        font-family: 'Syne';
+    .textNext {
+      font-size: 1.5rem;
+      font-family: "Syne";
+      font-weight: 200;
+      width: 50%;
+      text-align: center;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    overflow: hidden;
+    padding-top: 10rem;
+
+    .upper {
+      width: 100%;
+      height: 20%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+
+      .top {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 0.3rem;
+        font-family: "Syne";
+        font-weight: 700;
+
+        .icon {
+          width: 6rem;
+          height: 6rem;
+          border-radius: 1.75rem;
+          overflow: hidden;
+          box-shadow: 0px 0px 5rem rgba(255, 255, 255, 0.25);
+          background-color: #f23041;
+
+          .path {
+            fill: #fff;
+          }
+        }
+      }
+    }
+
+    .lower {
+      margin-top: 2rem;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 0.5rem;
+      overflow: hidden;
+
+      .textPrev {
+        text-align: center;
+        font-size: 2rem;
+        font-family: "Syne";
+        font-weight: 700;
+      }
+      .textNext {
+        font-size: .9rem;
+        font-family: "Syne";
         font-weight: 200;
         width: 50%;
         text-align: center;
+      }
     }
-}
+  }
 }

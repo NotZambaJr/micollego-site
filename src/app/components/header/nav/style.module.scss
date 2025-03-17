@@ -6,8 +6,10 @@
         display: flex;
         gap: 50px;
         font-size: 'Syne';
-        margin-bottom: 80px;
-        color: rgba(60,60,60, 0.2);
+        margin-bottom: 0px;
+        margin-bottom: 0px;
+        justify-content: space-between;
+        color: #000;
 
     }
 
@@ -19,12 +21,16 @@
     }
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (max-width: 1000px) {
     .nav{
         .wrapper{
             margin-bottom: 0px;
             justify-content: space-between;
             color: #000;
+            margin-right: 50%;
+        }
+        .imageContainer{
+            display: none;
         }
     }
 }

@@ -1,15 +1,14 @@
-.title{
-width: 80vw;
-height: 100vh;
-display: flex;
-justify-content: center;
-align-items: center;
-flex-direction: column;
-padding: 1rem;
-font-family: 'Syne';
+.title {
+  width: 80vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem;
+  font-family: "Syne";
 
-
-.titleTop{
+  .titleTop {
     text-align: center;
     font-size: 6rem;
     line-height: 5.5rem;
@@ -18,22 +17,21 @@ font-family: 'Syne';
     margin-bottom: 1rem;
     color: #fff;
 
-    .underLine{
-        font-weight: 800;
-        line-height: 5rem;
-        color: #fff;
+    .underLine {
+      font-weight: 800;
+      line-height: 5rem;
+      color: #fff;
     }
-}
+  }
 
-.titleBottom{
+  .titleBottom {
     text-align: center;
     width: 30%;
     font-size: 1.25rem;
     color: #fff;
-}
+  }
 
-
-.titleButton{
+  .titleButton {
     width: 5rem;
     border-radius: 50%;
     margin-top: 1rem;
@@ -42,19 +40,50 @@ font-family: 'Syne';
     justify-content: center;
     align-items: center;
     color: #000;
-}
+  }
 
-.titleButton::before{
-    content: '';
+  .titleButton::before {
+    content: "";
     display: block;
     padding-top: 100%;
-}
+  }
 
-.shortcuts{
+  .shortcuts {
     position: absolute;
-    left: .5rem;
+    left: 0.5rem;
     top: 80%;
+  }
 }
 
-}
+@media only screen and (max-device-width: 600px) {
+  .title {
+    width: 100vw;
+    .titleTop {
+      text-align: center;
+      font-size: 2rem;
+      line-height: 2rem;
+      font-weight: 700;
 
+      margin-bottom: 2rem;
+      color: #fff;
+
+      .underLine {
+        font-weight: 800;
+        font-size: 2rem;
+        line-height: 2rem;
+        color: #fff;
+      }
+    }
+    .titleBottom {
+        width: 80%;
+        font-size: .8rem;
+        color: #fff;
+      }
+
+    .shortcuts{
+        position: absolute;
+        left: 0rem;
+        top: 85%;
+    }
+  }
+}

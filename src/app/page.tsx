@@ -43,24 +43,12 @@ export default function Home() {
     }
   }, []);
 
-  const isMobile = width <= 768;
-
   useEffect(() => {
     setTimeout(() => {
       setIsLoading(false);
     }, 3000);
   }, []);
 
-  if (isMobile) {
-    return (
-      <div>
-        <AnimatePresence mode="wait">
-          {isLoading && <Preloader />}
-        </AnimatePresence>
-        <Mobile />
-      </div>
-    );
-  } else {
     return (
       <div className={Style.container}>
         <AnimatePresence mode="wait">
@@ -91,4 +79,3 @@ export default function Home() {
       </div>
     );
   }
-}

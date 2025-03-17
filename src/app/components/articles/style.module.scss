@@ -1,44 +1,76 @@
-.containerArticles{
+.containerArticles {
+  width: 100%;
+  height: 120vh;
+  margin-top: 1rem;
+  display: flex;
+  position: relative;
+  z-index: 2;
+
+  .articles {
     width: 100%;
-    height: 120vh;
+    display: flex;
+    gap: 10rem;
+    flex-direction: row;
+    margin: 10rem 17rem;
+    justify-content: space-between;
+  }
+
+  .megaphoneCanvas {
+    height: 150vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90vw;
+    z-index: -1;
+    overflow: hidden;
+  }
+}
+
+.title {
+  font-family: "Syne";
+  padding-top: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 6rem;
+  font-weight: 700;
+  color: #153dbc;
+}
+
+@media screen and (max-width: 600px) {
+  .containerArticles {
+    width: 100vw;
+    height: 100vh;
     margin-top: 1rem;
     display: flex;
+    flex-direction: column;
     position: relative;
     z-index: 2;
 
-    .articles{
-        width: 100%;
-        display: flex;
-        gap: 10rem;
-        flex-direction: row;
-        margin: 10rem 17rem;
-        justify-content: space-between;
-
-
-
+    .articles {
+      width: 90%;
+      display: flex;
+      gap: 10rem;
+      align-items: center;
+      overflow: visible;
+      flex-direction: column;
+      margin: 3rem 0;
+      padding: 2rem;
     }
-    
-    .megaphoneCanvas{
-        height: 150vh;
-        position: absolute;
-        top: 0 ;
-        left: 0;
-        width: 90vw;
-        z-index: -1;
-        overflow: hidden;
-    
-    }
-}
 
-.title{
-    font-family: 'Syne';
-    padding-top: 10rem;
+    .megaphoneCanvas {
+      display: none;
+    }
+  }
+
+  .title {
+    font-family: "Syne";
+    padding-top: 4rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 6rem;
+    font-size: 1.5rem;
     font-weight: 700;
     color: #153dbc;
+  }
 }
-
-

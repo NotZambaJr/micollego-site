@@ -53,6 +53,7 @@ export default function Index() {
           />
           <Footer />
         </div>
+        <div className={styles.imageContainer}>
         <Image
           style={{
             backgroundColor: "#153dbc",
@@ -62,7 +63,7 @@ export default function Index() {
           height={400}
           src={links[selectedLink.index].src}
           isActive={selectedLink.isActive}
-        />
+        /></div>
       </div>
     </motion.div>
   );

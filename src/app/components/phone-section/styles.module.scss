@@ -1,27 +1,65 @@
-.container{
+.container {
+  display: flex;
+  width: 100%;
+  gap: 5rem;
+  justify-content: space-between;
+}
+
+.content, .contentRight {
+  margin-top: 10rem;
+}
+.phoneContainer, .phoneContainerRight {
+  width: 50%;
+}
+
+.contentPrev {
+  font-family: "Syne";
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.contentNext {
+  font-family: "Syne";
+  font-weight: 200;
+  font-size: 1.5rem;
+  width: 100%;
+  text-align: left;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
     display: flex;
-    width: 100%;
-    gap: 5rem;
+    width: 100vw;
+    margin-left: 3rem;
+    
+    gap: 2rem;
     justify-content: space-between;
-}
+  }
 
-.content{
-    margin-top: 10rem;
-}
-.phoneContainer{
-    width: 50%;
-}
+  .phoneContainer {
+    width: 100%;
+    overflow-x: hidden;
+    text-align: right;
+  }
+  .phoneContainerRight {
+    margin-left: -290px;
+  }
 
-.contentPrev{
-    font-family: 'Syne';
+  .contentRight{
+    margin-right: 3rem;
+  }
+
+  .contentPrev {
+    font-family: "Syne";
     font-weight: 700;
     font-size: 2rem;
-}
+  }
 
-.contentNext{
-    font-family: 'Syne';
+  .contentNext {
+    font-family: "Syne";
     font-weight: 200;
-    font-size: 1.5rem;
+    font-size: 1rem;
     width: 100%;
     text-align: left;
+  }
 }

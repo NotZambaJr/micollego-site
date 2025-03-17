@@ -39,17 +39,15 @@
 
     z-index: 1;
   }
-
-
 }
 
 .contactText {
   display: inline-block;
   position: relative;
-  font-family: 'Syne';
+  font-family: "Syne";
   font-weight: 800;
   font-size: 4rem;
-  padding-left: .5rem;
+  padding-left: 0.5rem;
   color: #fff;
   position: relative;
   z-index: 3;
@@ -57,23 +55,99 @@
 }
 
 .contactText::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 77%;
   transform: scaleX(0);
   height: 5px;
   bottom: 0;
-  left: .5rem;
+  left: 0.5rem;
   background-color: #fff;
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
-
 }
 
 .contactText:hover::after {
   transform: scaleX(1);
   transform-origin: bottom left;
-  padding-left: .5rem;
+  padding-left: 0.5rem;
 }
 
+@media screen and (max-width: 600px) {
+  .header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+  }
+  .contactContainer {
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    max-height: 100vh;
+    background-color: #153dbc;
+    background-image: url('/assets/img/contact-pattern.png');
+    background-blend-mode: soft-light;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 0;
+    overflow: hidden;
 
+    .ball {
+      display: none;
+    }
+  }
+
+  .contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    padding-top: 6rem;
+    margin-left: 1rem;
+    width: 100%;
+    overflow: hidden;
+
+    .contactTitle {
+      pointer-events: none;
+      font-family: "Visby";
+      font-size: 1.5rem;
+      font-weight: 300;
+
+      z-index: 1;
+    }
+  }
+
+  .contactText {
+    display: inline-block;
+    position: relative;
+    font-family: "Syne";
+    font-weight: 800;
+    font-size: 2.25rem;
+    color: #fff;
+    position: relative;
+    z-index: 3;
+    transition: filter 0.25s ease-out;
+  }
+
+  .contactText::after {
+    content: "";
+    position: absolute;
+    width: 77%;
+    transform: scaleX(0);
+    height: 5px;
+    bottom: 0;
+    left: 0.5rem;
+    background-color: #fff;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+
+  .contactText:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+    padding-left: 0.5rem;
+  }
+}

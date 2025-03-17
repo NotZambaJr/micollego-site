@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack -p 5173",
+    "dev": "next dev --turbopack -p 5173 -H 192.168.1.171",
     "build": "next build",
     "build-img": "next build && next-export-optimize-images",
     "start": "next start",

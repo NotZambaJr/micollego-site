@@ -36,7 +36,7 @@ export default function Project() {
         <AnimatePresence mode="wait">
           {isLoading && <Preloader />}
         </AnimatePresence>
-        <Header />
+        <div className={styles.nav}><Header /></div>
         <div className={styles.landing}>
           <Landing></Landing>
         </div>

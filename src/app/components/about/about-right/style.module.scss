@@ -1,23 +1,37 @@
-.aboutRight{
-    display: flex;
-    align-items: center;
+.aboutRight {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: "Syne";
+  padding: 5rem;
+  padding-top: 20rem;
+  overflow: hidden;
+  gap: 10rem;
+
+  .aboutRightTitle {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-top: 2rem;
+    font-family: "Syne";
+  }
+  .aboutRightText {
+    font-size: 1.25rem;
+    font-weight: 500;
+  }
+}
+
+@media only screen and (max-device-width: 600px) {
+  .aboutRight {
+    padding: 2rem;
+    gap: 5rem;
+    align-items: baseline;
     justify-content: center;
-    flex-direction: column;
-    font-family: 'Syne';
-    padding: 5rem;
-    padding-top: 20rem;
-    overflow: hidden;
-    gap: 10rem;
-
-    .aboutRightTitle{
-        font-size: 3rem;
-        font-weight: 800;
-        margin-top: 2rem;
-        font-family: 'Syne';
-
+    .aboutRightTitle {
+      font-size: 2rem;
     }
-    .aboutRightText{
-        font-size: 1.25rem;
-        font-weight: 500;
+    .aboutRightText {
+      font-size: 1rem;
     }
+  }
 }
