@@ -7,6 +7,8 @@
     .aboutRight{
         width: 50%;
         color: white;
+        position: relative;
+        z-index: 9999;
     }
     .aboutLeft{
         position: sticky;
